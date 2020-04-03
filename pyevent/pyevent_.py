@@ -69,7 +69,7 @@ class Event(object):
         self.manager.eventRemoveHandler(self.name,handler)
 
     def emit(self,para=None):
-        self.para = para 
+        self.para = para
         newEvent = self.NewEvent(self.name,self.para)
         self.manager.sendEvent(newEvent)
 
